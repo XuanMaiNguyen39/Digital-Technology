@@ -1,3 +1,3 @@
 # Digital Technology
 
-TBD
+`pip install -r requirements.txt`
