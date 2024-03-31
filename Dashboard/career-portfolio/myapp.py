@@ -141,14 +141,14 @@ all_cards = [
 reference_card = html.Div([
     dmc.Card(
         children=[
-            dmc.Text("Marge Simpson", weight=500, size='xl'),
+            dmc.Text("Mai Nguyen", weight=500, size='xl'),
             dmc.Text(
-                "Pretzel business Owner",
+                "Student Developer",
                 size="md",
                 mb="xs",
             ),
             dmc.Text(
-                "when a man's biggest dreams include seconds on dessert, occasional snuggling and sleeping in til noon on weekends, no one man can destroy them.",
+                "To be defined",
                 size="sm",
                 color="dimmed",
             ),
