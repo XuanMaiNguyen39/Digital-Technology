@@ -1,11 +1,10 @@
-# These first 3 lines of code are needed when running the app in https://wasmdash.vercel.app/
-# import micropip
-# await micropip.install('dash-mantine-components')
-# await micropip.install('dash-iconify')
+## Imports necessary libraries and components for building the Dash app.
 import dash_mantine_components as dmc
 from dash import Dash, html, dcc
 from dash_iconify import DashIconify
 
+## Three cards (card1, card2, and card3) are defined, each representing a project. 
+## Each card contains an image, title, description, and a link to the project and its GitHub/Linkedin repository.
 card1 = dmc.Card(
     children=[
         dmc.CardSection(
@@ -117,10 +116,12 @@ card3 = dmc.Card(
     style={"width": 350},
 )
 
+## Page/Tab 1. all_cards is a list containing the project cards. 
+## It also includes a header indicating the section title.
 all_cards = [
     dmc.Header(
         height=80,
-        children=[dmc.Text("Data Analysis and AI Projects",
+        children=[dmc.Text("My Digital Technology Projects",
                            style={"fontSize": 40})],
     ),
     dmc.SimpleGrid(
@@ -138,6 +139,15 @@ all_cards = [
     )
 ]
 
+## Page/Tab 2. resume_div is a division containing an iframe displaying a Google Drive link, presumably for the developer's resume.
+resume_div = html.Div([
+    html.Iframe(src="https://drive.google.com/file/d/15vnaw90FhL21SZypgzzAdY24HxJQMujt/preview",
+                width="800", height="480")
+    ],
+    style={"paddingTop": 40}
+)
+
+## Page/Tab 3. reference_card is a card containing information about a person (possibly the developer) with a placeholder for details like name, role, and description.
 reference_card = html.Div([
     dmc.Card(
         children=[
@@ -161,14 +171,9 @@ reference_card = html.Div([
     style={"paddingTop": 40}
 )
 
-resume_div = html.Div([
-    html.Iframe(src="https://drive.google.com/file/d/15vnaw90FhL21SZypgzzAdY24HxJQMujt/preview",
-                width="800", height="480")
-    ],
-    style={"paddingTop": 40}
-)
-
-
+## The layout of the Dash app is defined. 
+## It includes tabs for Projects, Resume, and References. 
+## Each tab panel contains different content (project cards, resume division, and reference card).
 app = Dash()
 server = app.server
 app.layout = dmc.MantineProvider(
