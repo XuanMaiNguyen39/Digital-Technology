@@ -10,8 +10,8 @@ card1 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://i.im.ge/2024/01/11/3xIdOh.your-project-filler-1.png",
-                    alt="American Football Oracle GPT",
+                    src="https://www.freepnglogos.com/uploads/world-map-png/world-map-bootup-world-interactive-map-19.png",
+                    alt="Map plot of university rankings",
                 ),
                 href="https://chat.openai.com/g/g-RWX3i8Zfr-american-football-oracle",
                 target="_blank"
@@ -19,10 +19,10 @@ card1 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("American Football Oracle", weight=500, size='xl'),
+                dmc.Text("Map plot of university rankings", weight=500, size='xl'),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
-                    href='https://github.com/Coding-with-Adam/Dash-by-Plotly/tree/master/AI/Create-Your-Own-GPT',
+                    href='https://github.com/XuanMaiNguyen39',
                     target="_blank"
                 )
             ],
@@ -31,7 +31,7 @@ card1 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "An NFL GPT to analyze team performance, strategies, and game predictions.",
+            "Chart Your Course: Mapping University Rankings",
             size="sm",
             color="dimmed",
         ),
@@ -47,7 +47,7 @@ card2 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://i.im.ge/2024/01/11/3xI4b4.investment-app.png",
+                    src="https://www.worldatlas.com/r/w1200/upload/01/ff/40/shutterstock-401433736.jpg",
                     alt="dash-app",
                 ),
                 href="https://investment-app.onrender.com/",
@@ -56,10 +56,10 @@ card2 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Investment Portfolio", weight=500, size='xl'),
+                dmc.Text("Analyse each university", weight=500, size='xl'),
                 html.A(
                     DashIconify(icon="ion:logo-github", width=30),
-                    href='https://github.com/Coding-with-Adam/investing-app',
+                    href='https://github.com/XuanMaiNguyen39',
                     target="_blank"
                 )
             ],
@@ -68,7 +68,7 @@ card2 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "A multipage app that keeps track of one's investments.",
+            "A comprehensive analysis of each university in the TOP 50.",
             size="sm",
             color="dimmed",
         ),
@@ -84,7 +84,7 @@ card3 = dmc.Card(
         dmc.CardSection(
             dmc.Anchor(
                 dmc.Image(
-                    src="https://i.im.ge/2024/01/11/3xar3p.your-project-filler.png",
+                    src="https://www.detroitchamber.com/wp-content/uploads/2022/08/iStock-947295034-1.jpg",
                     alt="dash-app",
                 ),
                 href="https://charming-data.com/",
@@ -93,10 +93,10 @@ card3 = dmc.Card(
         ),
         dmc.Group(
             [
-                dmc.Text("Your Project Title", weight=500, size='xl'),
+                dmc.Text("Education attainment", weight=500, size='xl'),
                 html.A(
                     DashIconify(icon="skill-icons:linkedin", width=30),
-                    href='https://www.linkedin.com/in/adam-schroeder-17b5a819/',
+                    href='https://www.linkedin.com/in/mai-nguyen-922347245/',
                     target="_blank"
                 )
             ],
@@ -105,7 +105,7 @@ card3 = dmc.Card(
             mb="xs",
         ),
         dmc.Text(
-            "Your project description to share with the viewers of your portfolio.",
+            "Education attainment of each TOP 50 country",
             size="sm",
             color="dimmed",
         ),
@@ -141,7 +141,7 @@ all_cards = [
 
 ## Page/Tab 2. resume_div is a division containing an iframe displaying a Google Drive link, presumably for the developer's resume.
 resume_div = html.Div([
-    html.Iframe(src="https://drive.google.com/file/d/15vnaw90FhL21SZypgzzAdY24HxJQMujt/preview",
+    html.Iframe(src="https://docs.google.com/document/d/e/2PACX-1vQSFVjNtA_AahmemLCYKA-rVBBBRzXzUkFdAyUxGWXKX8w9J2ZD3ZgwEM9Rwa5XqWEH3Np9FztGY4b5/pub",
                 width="800", height="480")
     ],
     style={"paddingTop": 40}
@@ -158,7 +158,7 @@ reference_card = html.Div([
                 mb="xs",
             ),
             dmc.Text(
-                "To be defined",
+                "Courage isn't having the strength to go on, it is going on when you don't have the strength.- Napoleon Bonaparte",
                 size="sm",
                 color="dimmed",
             ),
