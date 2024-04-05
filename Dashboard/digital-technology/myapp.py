@@ -121,7 +121,7 @@ card3 = dmc.Card(
 all_cards = [
     dmc.Header(
         height=80,
-        children=[dmc.Text("My Digital Technology Projects",
+        children=[dmc.Text("Digital Technology Dashboard",
                            style={"fontSize": 40})],
     ),
     dmc.SimpleGrid(
