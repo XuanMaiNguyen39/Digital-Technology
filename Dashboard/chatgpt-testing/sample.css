@@ -1,0 +1,110 @@
+/* General body styles */
+body {
+    background-color: #708090; /* Adjust the background color as needed */
+    font-family: Arial, sans-serif; /* Ensures font consistency */
+}
+
+/* Main dashboard container styling */
+.dashboard-container {
+    width: 1400px;
+    height: 800px;
+    margin: 50px auto;
+    background-color: #010103;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for titles and text */
+h1, h2, h3, p {
+    color: #ffffff; /* Light text for readability */
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 16px;
+    text-align: left; /* Ensuring text aligns properly */
+}
+
+/* Button and radio item styling */
+.btn-group .btn {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.btn-outline-light {
+    background-color: transparent;
+    color: #ebebf4;
+    border-color: #676768;
+}
+
+.btn-outline-light:hover, .btn-outline-light:focus {
+    background-color: #2a2f33;
+    color: #ffffff;
+}
+
+.btn-info {
+    background-color: #5bc0de;
+    color: #ffffff;
+}
+
+.btn-info:hover {
+    background-color: #49afd9;
+}
+
+/* Dropdown styling */
+.Select-control, .Dropdown {
+    background-color: #333;
+    border: none;
+    color: white;
+}
+
+.Select-menu-outer {
+    background-color: #333;
+    border: none;
+    color: white;
+}
+
+/* Graph container adjustments */
+.graph-container {
+    width: 100%;
+    padding: 10px;
+    background-color: #121212; /* Dark background for graph area */
+    border-radius: 5px;
+}
+
+/* Row and Column adjustments */
+.row {
+    margin-right: -15px; /* Adjust this value based on actual needs */
+    margin-left: -15px;  /* Adjust this value based on actual needs */
+}
+
+.col {
+    padding-right: 15px; /* Adjust this value based on actual needs */
+    padding-left: 15px;  /* Adjust this value based on actual needs */
+}
+
+/* Output box styling */
+.Output {
+    background-color: rgba(204, 204, 204, 0.1);
+    border: 1px solid rgba(204, 204, 204, 0.1);
+    color: #ffffff;
+    padding: 5px;
+    height: 50px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Misc adjustments */
+.modebar {
+    display: none !important; /* Hide plotly modebar */
+}
