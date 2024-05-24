@@ -1,5 +1,11 @@
+open VSC
+open terminal to open jupyter lab 
+open source tree
+
 open output on development server:
 http://127.0.0.1:8055/
+
+
 
 ==PYTHON CODE==
 app.layout = dbc.Container([
@@ -278,3 +284,183 @@ h3 {
     font-family: "Poppins";
     color: var(--bs-info);
 }
+
+==CSS backup==
+body {
+    background-color: #708090;
+}
+
+.dashboard-container {
+    width: 1400px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #010103;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: "Arial";
+    color: #1a9fcf;
+    font-size: 35px;
+    margin: 15px;
+}
+
+p {
+    font-family: 'Arial';
+    color: #ffffff;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* Radio-buttons */
+
+.form-check {
+    width: 100%;
+    height: 38px;
+    margin: 1px;
+    padding-left: 0;
+}
+
+.btn.btn-outline-light,
+.btn.btn-light {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    font-family: "Arial";
+    border-radius: 3px;
+    color: #ebebf4;
+}
+
+.btn.btn-outline-light {
+    border: 1px solid transparent;
+}
+
+.btn.btn-outline-light:hover {
+    color: #ebebf4;
+    background-color: color-mix(in srgb, var(--bs-light), #e4e4f1 7%);
+}
+
+/* Single button */
+
+.btn.btn-info {
+    width: 100%;
+    height: 38px;
+    margin: 1px;
+    padding: 6px;
+    font-family: "Arial";
+    border-radius: 3px;
+    background-color: lightskyblue;
+    border: 1px darkblue;
+}
+
+.btn.btn-info:active,
+.btn.btn-info:focus {
+    background-color: var(--bs-info);
+}
+
+.btn.btn-info:hover {
+    background-color: color-mix(in srgb, var(--bs-info), #010103 7%);
+}
+
+/* Radio-buttons and buttons container
+.flex-container {
+    display: flex;
+    justify-content: right; /* Align items to the left */
+/* margin-left: 15px; /* Adjust margin as needed */
+/* margin-right: 15px; */
+
+h2 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: "Poppins";
+    font-size: 14px !important;
+    color: #ffffff;
+}
+
+/* Dropdowns */
+
+
+.customDropdown {
+    font-size: 16px;
+    font-family: "Poppins";
+    padding-left: 1px;
+}
+
+.customDropdown .Select-control {
+    width: 100%;
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid #676768;
+    border-radius: 3px;
+    color: var(--bs-info) !important;
+}
+
+.customDropdown .Select-value-label,
+.customDropdown .Select-placeholder {
+    color: var(--bs-info) !important;
+}
+
+.customDropdown .Select-arrow {
+    border-color: #cccccc transparent transparent;
+}
+
+.customDropdown.is-open .Select-arrow {
+    border-color: transparent transparent #cccccc;
+}
+
+.customDropdown .Select-clear {
+    color: var(--bs-info);
+    font-size: 22px;
+}
+
+.customDropdown.is-focused:not(.is-open)>.Select-control {
+    border: 2px solid color-mix(in srgb, var(--bs-info), #010103 50%) !important;
+}
+
+.customDropdown.is-focused:not(.is-open) .Select-arrow {
+    border-color: var(--bs-info) transparent transparent;
+}
+
+.customDropdown .Select-menu-outer {
+    margin-top: 5px;
+    border-radius: 3px;
+    background-color: #010103;
+    border: 1px solid #676768;
+    color: var(--bs-light);
+}
+
+.customDropdown .VirtualizedSelectFocusedOption {
+    background-color: color-mix(in srgb, var(--bs-light), #010103 7%);
+    border-radius: 3px;
+    color: #010103;
+}
+
+.modebar {
+    display: none !important;
+}
+
+.Output {
+    width: 150px;
+    height: 38px;
+    background-color: rgba(204, 204, 204, 0.1);
+    border: 1px solid rgba(204, 204, 204, 0.1);
+    border-radius: 3px;
+}
+
+.Output:empty::before {
+    content: "";
+    display: inline-block;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 34px;
+    padding-left: 7px;
+    font-family: "Poppins";
+    color: var(--bs-info);
+}
+
