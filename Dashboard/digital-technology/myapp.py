@@ -116,6 +116,7 @@ card3 = dmc.Card(
     style={"width": 350},
 )
 
+
 ## Page/Tab 1. all_cards is a list containing the project cards. 
 ## It also includes a header indicating the section title.
 all_cards = [
@@ -176,6 +177,7 @@ reference_card = html.Div([
 ## Each tab panel contains different content (project cards, resume division, and reference card).
 app = Dash()
 server = app.server
+
 app.layout = dmc.MantineProvider(
     theme={"colorScheme": "dark"},
     withGlobalStyles=True,
