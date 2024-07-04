@@ -377,5 +377,5 @@ app.layout = dmc.MantineProvider(
     
 )
 
-if __name__ == "__main__":
-    app.run_server(debug=True, port=8035)
+if __name__=='__main__':
+    app.run(debug=False)
