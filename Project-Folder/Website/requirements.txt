@@ -1,7 +1,7 @@
 pandas
 plotly
 dash-bootstrap-components
-dash
+dash==2.6.0
 dash-mantine-components
 dash-iconify
 gunicorn
