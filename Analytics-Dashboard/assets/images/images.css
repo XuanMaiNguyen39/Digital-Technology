@@ -1,0 +1,34 @@
+img[src*="#my-image"] {
+    width: 120px;
+    height: 120px;
+  }
+
+img[src*="#icon1"] {
+    /* filter: var(--inverse-color); */
+    width: 50px;
+    height: 50px;
+  }
+
+  img[src*="#icon2"] {
+    /* filter: var(--inverse-color); */
+    width: 50px;
+    height: 50px;
+  }
+
+  img[src*="#icon3"] {
+    /* filter: var(--inverse-color); */
+    width: 50px;
+    height: 50px;
+  }
+
+  img[src*="#icon4"] {
+    /* filter: var(--inverse-color); */
+    width: 50px;
+    height: 50px;
+  }
+
+  img[src*="#icon5"] {
+    /* filter: var(--inverse-color); */
+    width: 50px;
+    height: 50px;
+  }
