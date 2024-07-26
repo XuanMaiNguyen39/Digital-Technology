@@ -3,6 +3,11 @@ img[src*="#my-image"] {
     height: 700px;
   }
 
+img[src*="#my-image2"] {
+    width: 300px;
+    height: 300px;
+  }
+
 img[src*="#icon1"] {
     /* filter: var(--inverse-color); */
     width: 50px;
