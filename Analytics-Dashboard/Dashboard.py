@@ -795,7 +795,9 @@ if not IS_JUPYTERLAB:
     server = app.dash.server
     
     if __name__ == "__main__":  
-        app.run(port=8080)
+        # app.run(port=8080)
+        app.run()
 else:
-    Vizro(assets_folder="assets").build(dashboard).run(port=8083)
+    # Vizro(assets_folder="assets").build(dashboard).run(port=8085)
+    Vizro(assets_folder="assets").build(dashboard).run()
 
