@@ -7,7 +7,7 @@ from vizro.actions import export_data, filter_interaction
 import plotly.graph_objects as go
 from vizro.models.types import capture
 
-Vizro._reset()
+
 
 def create_intro():
     """Introduction Page""" 
@@ -752,7 +752,7 @@ def create_home_page():
 
     return page_home
 
-IS_JUPYTERLAB = 'true'
+# IS_JUPYTERLAB = 'true'
 
 
 
@@ -790,15 +790,18 @@ dashboard = vm.Dashboard(
     ),
 )
 
-if not IS_JUPYTERLAB:
-    app = Vizro().build(dashboard)
-    server = app.server
-    # server = app.dash.server
+# if not IS_JUPYTERLAB:
+#     app = Vizro().build(dashboard)
+#     server = app.server
+#     # server = app.dash.server
     
-    if __name__ == "__main__":  
-        # app.run(port=8080)
-        app.run()
-else:
-    # Vizro(assets_folder="assets").build(dashboard).run(port=8085)
+#     if __name__ == "__main__":  
+#         # app.run(port=8080)
+#         app.run()
+# else:
+#     # Vizro(assets_folder="assets").build(dashboard).run(port=8085)
+#     Vizro(assets_folder="assets").build(dashboard).run()
+
+if __name__ == "__main__":
     Vizro(assets_folder="assets").build(dashboard).run()
 
