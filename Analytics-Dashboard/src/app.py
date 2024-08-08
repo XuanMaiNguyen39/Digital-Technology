@@ -802,7 +802,10 @@ dashboard = vm.Dashboard(
 #     # Vizro(assets_folder="assets").build(dashboard).run(port=8085)
 #     Vizro(assets_folder="assets").build(dashboard).run()
 
+app = Vizro().build(dashboard)
+server = app.server
+
 if __name__ == "__main__":
     Vizro(assets_folder="assets").build(dashboard).run()
-    server = app.server
+    
 
