@@ -1,6 +1,0 @@
-dash==2.9.3
-pandas
-plotly
-vizro
-vizro.models
-gunicorn 
