@@ -792,7 +792,8 @@ dashboard = vm.Dashboard(
 
 if not IS_JUPYTERLAB:
     app = Vizro().build(dashboard)
-    server = app.dash.server
+    server = app.server
+    # server = app.dash.server
     
     if __name__ == "__main__":  
         # app.run(port=8080)
