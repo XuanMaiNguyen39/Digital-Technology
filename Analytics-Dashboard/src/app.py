@@ -797,8 +797,8 @@ if not IS_JUPYTERLAB:
         # app.run(port=8080)
         app.run()
 else:
-    # Vizro(assets_folder="assets").build(dashboard).run(port=8085)
-    Vizro(assets_folder="assets").build(dashboard).run(port=18350)
+    # Vizro(assets_folder="assets").build(dashboard).run()
+    Vizro(assets_folder="assets").build(dashboard).run()
 
 # app = Vizro().build(dashboard)
 # server = app.server
