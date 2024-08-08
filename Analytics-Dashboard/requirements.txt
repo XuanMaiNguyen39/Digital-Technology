@@ -1,5 +1,7 @@
-pandas==1.5.2
-plotly==5.15.0
-vizro==0.1.19
-gunicorn
+dash==2.9.3
+pandas==2.2.2
+plotly==5.11.0
+vizro
+vizro.models
+gunicorn 
 dash-tools
