@@ -607,6 +607,7 @@ def barchart(data_frame, x, y, title=None, text=None, template=None):
             yref='paper',
             x=0, 
             y=-0.2,
+            text="Source: <a href='https://www.topuniversities.com/universities/university-auckland'>QS Rankings</a>",
             showarrow=False,
             font=dict(
                 family="Georgia, serif",
