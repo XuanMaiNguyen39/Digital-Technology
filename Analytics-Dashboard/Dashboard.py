@@ -55,7 +55,7 @@ So dive in, explore, and find your future right here at home! 🌏✨
             ),
              vm.Card(
                 text="""
-                ![](assets/images/unilogo.png#my-image)
+                ![](assets/images/unilogo2.png#my-image)
             """,
             ),
             
@@ -63,6 +63,439 @@ So dive in, explore, and find your future right here at home! 🌏✨
     )
     return page_intro
 
+##back up PAGE 2 METRICS
+# gapminder = pd.read_csv('uni.csv', header=0, usecols=[
+#     "University Name", 
+#     "Academic reputation (QS25)", 
+#     "Teaching quality (THE24)", 
+#     "Employment Outcomes (QS25)", 
+#     "Research quality (THE24)", 
+#     "International Research Network (QS25)", 
+#     "Employer Reputation (QS25)"
+# ])
+
+# gapminder_1 = pd.DataFrame(dict(
+#     r=[82.2, 39.7, 92.9, 88.3, 87.4, 44.7],
+#     r_otago=[45, 35.6, 59.1, 75.8, 79.5, 24.6],
+#     r_massey=[30.1, 28.7, 49.2, 60.5, 85.1, 14],
+#     r_victoria=[42.8, 28.6, 71.6, 69.4, 70.7, 21.4],
+#     r_waikato=[19.1, 26.1, 46.4, 74.3, 55.1, 11.7],
+#     r_canterbury=[34.7, 28.6, 82.3, 62.4, 63, 27.3],
+#     r_lincoln=[8.2, 33.9, 40, 68.4, 20.2, 5],
+#     r_aut=[19.3, 23.8, 12.4, 84, 52.6, 11.2],
+#     theta=['Academic reputation', 'Teaching quality', 'Employment Outcomes', 'Research quality', 'International Research Network', 'Employer Reputation']
+# ))
+
+# @capture("graph")
+# def radarchart(data_frame, r, theta, title=None, markers=None, hover_name=None, line_close=None, template=None): 
+#     fig_radar = px.line_polar(data_frame=data_frame, r=r, theta=theta, title=title, markers=markers, hover_name=hover_name, line_close=line_close, template=template)
+    
+#     fig_radar.update_layout(
+#         legend=dict(
+#             font=dict(
+#                 family="Georgia, serif",
+#                 size=12,
+#             )
+#         ),
+#         annotations=[
+#             dict(
+#                 xref='paper', 
+#                 yref='paper',
+#                 x=0.5, 
+#                 y=-0.1,  # Position below the chart
+#                 showarrow=False,
+#                 text="Source: <a href='https://www.topuniversities.com/universities/university-auckland'>QS Rankings</a>, <a href='https://www.timeshighereducation.com/world-university-rankings'>THE Rankings</a>",
+#                 font=dict(
+#                     family="Georgia, serif",
+#                     size=12,
+#                 ),
+#             )
+#         ]
+#     ) 
+    
+#     fig_radar.update_traces(fill='toself')
+
+#     fig_radar.update_layout(
+#         font_family="Georgia, serif",
+#         title_font_family="Georgia, serif",
+#     )
+#     return fig_radar
+
+# def create_metrics():
+#     """Function returns a page to show scores of different metrics on each university."""
+#     page_years = vm.Page(
+#         title="Universities' Scores in metrics",
+#         description="Discovering how different NZ universities are scored with different metrics",
+#         layout=vm.Layout(grid=[[0]]),
+#         components=[
+#             vm.Tabs(
+#                 # tabs=[
+#                 #     vm.Container(
+#                 #         title="Auckland",
+#                 #         layout=vm.Layout(grid=[[1,1],
+#                 #                                [0,0],
+#                 #                                [0,0],
+#                 #                                [0,0],
+#                 #                                [0,0],
+#                 #                                [0,0],]),
+#                 #         components=[
+#                 #             vm.Graph(
+#                 #                 id="uoa",
+#                 #                 figure=radarchart(
+#                 #                     gapminder_1,
+#                 #                     r="r",
+#                 #                     theta="theta",
+#                 #                     title="University of Auckland",
+#                 #                     markers=True,
+#                 #                     hover_name="theta",
+#                 #                     line_close=True, 
+#                 #                     template="seaborn",
+#                 #                 ),
+#                 #             ),
+#                 #             vm.Card(
+#                 #                 text="""
+#                 #                 ![](assets/images/uoa2.png#my-image2)
+
+                    
+                                
+#                 #                 The University of Auckland is New Zealand’s leading university, located in the country’s largest city. 
+                                
+#                 #                 It offers a comprehensive range of programs and is known for its strong emphasis on research and innovation. 
+
+#                 #                  > ## WHAT DOES THIS MEAN? 
+
+#                 #                 > - **Academic Reputation (82.2)**: The University of Auckland is known around the world for its high academic standards. You'll be able to learn from some of the greatest minds in the world.
+
+#                 #                 > - **Employment Outcomes (92.9)**: you will have good job chances and exciting career options right after you graduate.
+
+#                 #                 > - **Research Quality (88.3)**: At UOA, you can dive into cutting-edge research, where new projects and findings happen every day. You'll be a part of a university that challenges what people think they know.
+
+#                 #                 > - **International Research Network (87.4)**: Work with the best experts in the world. Because UOA has strong international ties, you'll get a global view and useful training.  
+                                
+#                 #                 If you choose the University of Auckland, you'll be choosing a university that is highly regarded, has great job prospects, and does great study. 
+#                 #                 You'll accomplish well in school and at work there, and you'll still be close to the exciting city life of Auckland. 🌟📚🌍
+
+         
+#                 #                 """,
+                
+#                 #             ),
+#                 #         ],
+#                 #     ),
+#                     vm.Container(
+#                         title="Auckland",
+#                         layout=vm.Layout(grid=[[1, 0, 0]]),
+#                         components=[
+#                             vm.Graph(
+#                                 id="uoa",
+#                                 figure=radarchart(
+#                                     gapminder_1,
+#                                     r="r",
+#                                     theta="theta",
+#                                     title="University of Auckland",
+#                                     markers=True,
+#                                     hover_name="theta",
+#                                     line_close=True, 
+#                                     template="seaborn",
+#                                 ),
+#                             ),
+#                             vm.Card(
+#                                 text="""
+#                                 ![](assets/images/uoa2.png#my-image2)
+
+                    
+                                
+#                                 The University of Auckland is New Zealand’s leading university, located in the country’s largest city. 
+                                
+#                                 It offers a comprehensive range of programs and is known for its strong emphasis on research and innovation. 
+
+#                                  > ## WHAT DOES THIS MEAN? 
+
+#                                 > - **Academic Reputation (82.2)**: The University of Auckland is known around the world for its high academic standards. You'll be able to learn from some of the greatest minds in the world.
+
+#                                 > - **Employment Outcomes (92.9)**: you will have good job chances and exciting career options right after you graduate.
+
+#                                 > - **Research Quality (88.3)**: At UOA, you can dive into cutting-edge research, where new projects and findings happen every day. You'll be a part of a university that challenges what people think they know.
+
+#                                 > - **International Research Network (87.4)**: Work with the best experts in the world. Because UOA has strong international ties, you'll get a global view and useful training.  
+                                
+#                                 If you choose the University of Auckland, you'll be choosing a university that is highly regarded, has great job prospects, and does great study. 
+#                                 You'll accomplish well in school and at work there, and you'll still be close to the exciting city life of Auckland. 🌟📚🌍
+
+         
+#                                 """,
+                
+#                             ),
+#                         ],
+#                     ),
+#                     vm.Container(
+#                         title="Otago",
+#                         layout=vm.Layout(grid=[[1, 0, 0]]),
+#                         components=[
+#                             vm.Graph(
+#                                 id="otago",
+#                                 figure=radarchart(
+#                                     gapminder_1,
+#                                     r="r_otago",
+#                                     theta="theta",
+#                                     title="University of Otago",
+#                                     markers=True,
+#                                     hover_name="theta",
+#                                     line_close=True,
+#                                     template="seaborn"
+#                                 ),
+#                             ),
+#                             vm.Card(
+#                                 text="""
+#                                 # ![](assets/images/otago.png#my-image3)
+                                
+#                                 The University of Otago is New Zealand’s oldest university, located in the scenic city of Dunedin. 
+                                
+#                                 It offers a rich variety of programs and is renowned for its vibrant campus life and strong research focus.
+                                
+#                                 > ### SO WHAT DOES THIS MEAN? 
+                                
+#                                 > - **Employment Outcomes (59.1)**: Otago graduates are highly sought after by employers, leading to strong job prospects and successful career paths right after graduation.
+                                
+#                                 > - **Research Quality (75.8)**: Engage in high-impact research at Otago, where students and faculty work on innovative projects that drive forward scientific and academic knowledge.
+                                
+#                                 > - **International Research Network (79.5)**: Otago boasts strong international collaborations, giving students the opportunity to participate in global research initiatives and broaden their academic horizons.
+                                
+#                                 Choosing the University of Otago means joining a university that values academic excellence, offers significant research opportunities, and fosters a supportive and dynamic student community. It's a place where you'll not only grow academically but also enjoy a vibrant and fulfilling university experience in a beautiful setting. 🌟📚🌏
+#                                 """,
+#                             ),
+#                         ],
+#                     ),
+#                     vm.Container(
+#                         title="Massey",
+#                         layout=vm.Layout(grid=[[1, 0, 0]]),
+#                         components=[
+#                             vm.Graph(
+#                                 id="massey",
+#                                 figure=radarchart(
+#                                     gapminder_1,
+#                                     r="r_massey",
+#                                     theta="theta",
+#                                     title="Massey University",
+#                                     markers=True,
+#                                     hover_name="theta",
+#                                     line_close=True,
+#                                     template="seaborn"
+#                                 ),
+#                             ),
+#                             vm.Card(
+#                                 text="""
+#                                 # ![](assets/images/massey.png#my-image4)
+                                
+#                                 ### Massey University
+#                                 Massey University is renowned for its innovative teaching methods and extensive research programs, with campuses in Palmerston North, Albany, and Wellington.
+                                
+#                                 It offers a wide range of programs and emphasizes practical, hands-on learning experiences.
+                                
+#                                 > ### SO WHAT DOES THIS MEAN? 
+                                
+#                                 > - **International Research Network (85.1)**: Massey has an extensive international research network, allowing students to collaborate on global projects and gain international experience.
+                                
+#                                 > - **Research Quality (60.5)**: Engage in high-quality research at Massey, where innovative projects and discoveries are highly encouraged.
+                                
+#                                 > - **Employment Outcomes (49.2)**: Massey graduates are well-prepared for the workforce, with solid job prospects after graduation.
+                                
+#                                 Choosing Massey University means embracing innovation and benefiting from a global perspective, with numerous opportunities for international collaboration. 🌟🌐📚
+#                                 """,
+#                             ),
+#                         ],
+#                     ),
+#                     vm.Container(
+#                         title="Victoria @ Wellington",
+#                         layout=vm.Layout(grid=[[1, 0, 0]]),
+#                         components=[
+#                             vm.Graph(
+#                                 id="victoria",
+#                                 figure=radarchart(
+#                                     gapminder_1,
+#                                     r="r_victoria",
+#                                     theta="theta",
+#                                     title="Victoria University of Wellington",
+#                                     markers=True,
+#                                     hover_name="theta",
+#                                     line_close=True,
+#                                     template="seaborn"
+#                                 ),
+#                             ),
+#                             vm.Card(
+#                                 text="""
+#                                 # ![](assets/images/victoria.png#my-image5)
+                                
+#                                 ### Victoria University of Wellington
+#                                 Victoria University of Wellington is celebrated for its strong emphasis on research and academic excellence. Located in New Zealand's capital, it offers unique opportunities for engagement with government and industry.
+                                
+#                                 It offers a diverse range of programs and is known for its vibrant campus life and strong community engagement.
+                                
+#                                 > ### SO WHAT DOES THIS MEAN? 
+                                
+#                                 > - **Employment Outcomes (71.6)**: Graduates from Victoria have strong employment prospects, with many finding successful careers shortly after graduation.
+                                
+#                                 > - **Research Quality (69.4)**: Victoria excels in research, providing students with opportunities to participate in cutting-edge projects.
+                                
+#                                 > - **International Research Network (70.7)**: Victoria's strong international connections mean students can participate in global research initiatives and gain a global perspective.
+                                
+#                                 Choosing Victoria University of Wellington means gaining access to excellent academic programs and strong career opportunities in the heart of New Zealand's capital. 🌟🏙️📚
+#                                 """,
+#                             ),
+#                         ],
+#                     ),
+#                     vm.Container(
+#                         title="Waikato",
+#                         layout=vm.Layout(grid=[[1, 0, 0]]),
+#                         components=[
+#                             vm.Graph(
+#                                 id="waikato",
+#                                 figure=radarchart(
+#                                     gapminder_1,
+#                                     r="r_waikato",
+#                                     theta="theta",
+#                                     title="University of Waikato",
+#                                     markers=True,
+#                                     hover_name="theta",
+#                                     line_close=True,
+#                                     template="seaborn",
+#                                 ),
+#                             ),
+#                             vm.Card(
+#                                 text="""
+#                                 # ![](assets/images/waikato.png#my-image6)
+                                
+#                                 ### University of Waikato
+#                                 The University of Waikato, located in Hamilton, is known for its innovative approach to education and strong ties to the community.
+                                
+#                                 It offers a diverse range of programs and emphasizes research excellence and practical learning.
+                                
+#                                 > ### SO WHAT DOES THIS MEAN? 
+                                
+#                                 > - **Research Quality (74.3)**: Waikato excels in research, providing students with opportunities to participate in cutting-edge projects and innovations.
+                                
+#                                 > - **International Research Network (55.1)**: The university's global connections mean you'll have access to a diverse range of research opportunities and collaborations.
+                                
+#                                 Choosing the University of Waikato means joining a university that values research and practical experience. It's a place where you can engage in high-quality research while being part of a supportive and innovative community. 🌟🔬📚
+#                                 """,
+#                             ),
+#                         ],
+#                     ),
+#                     vm.Container(
+#                         title="Canterbury",
+#                         layout=vm.Layout(grid=[[1, 0, 0]]),
+#                         components=[
+#                             vm.Graph(
+#                                 id="canterbury",
+#                                 figure=radarchart(
+#                                     gapminder_1,
+#                                     r="r_canterbury",
+#                                     theta="theta",
+#                                     title="University of Canterbury",
+#                                     markers=True,
+#                                     hover_name="theta",
+#                                     line_close=True,
+#                                     template="seaborn",
+#                                 ),
+#                             ),
+#                             vm.Card(
+#                                 text="""
+#                                 # ![](assets/images/canterbury.png#my-image7)
+                                
+#                                ### University of Canterbury
+#                                 The University of Canterbury, located in Christchurch, is renowned for its strong engineering and science programs.
+                                
+#                                 It offers a wide range of academic programs and is committed to providing a high-quality education through research and practical learning.
+                                
+#                                 > ### SO WHAT DOES THIS MEAN? 
+                                
+#                                 > - **Employment Outcomes (82.3)**: Canterbury graduates are highly sought after by employers, ensuring strong job prospects and exciting career opportunities.
+                                
+#                                 > - **International Research Network (63)**: The university's international collaborations provide students with opportunities to engage in global research projects.
+                                
+#                                 Choosing the University of Canterbury means being part of a respected institution with excellent job prospects and strong international research connections. It's a place where you can thrive academically and professionally. 🌟🔧📚
+#                                 """,
+#                             ),
+#                         ],
+#                     ),
+#                     vm.Container(
+#                         title="Lincoln",
+#                         layout=vm.Layout(grid=[[1, 0, 0]]),
+#                         components=[
+#                             vm.Graph(
+#                                 id="lincoln",
+#                                 figure=radarchart(
+#                                     gapminder_1,
+#                                     r="r_lincoln",
+#                                     theta="theta",
+#                                     title="Lincoln University",
+#                                     markers=True,
+#                                     hover_name="theta",
+#                                     line_close=True,
+#                                     template="seaborn",
+#                                 ),
+#                             ),
+#                             vm.Card(
+#                                 text="""
+#                                 # ![](assets/images/lincoln.png#my-image8)
+                                
+#                                 ### Lincoln University
+#                                 Lincoln University, located near Christchurch, is a specialist land-based university with a strong focus on agriculture and environmental science.
+                                
+#                                 It offers unique programs tailored to these fields and emphasizes research and practical learning.
+                                
+#                                 > ### SO WHAT DOES THIS MEAN? 
+                                
+#                                 > - **Research Quality (68.4)**: Lincoln excels in research, particularly in areas related to agriculture and environmental science, providing students with opportunities to contribute to significant discoveries.
+                                
+#                                 Choosing Lincoln University means gaining expertise in specialized fields with strong research support. It's a place where you can engage in high-quality research while being close to nature. 🌟🌱📚
+#                                 """,
+#                             ),
+#                         ],
+#                     ),
+#                     vm.Container(
+#                         title="AUT",
+#                         layout=vm.Layout(grid=[[1, 0, 0]]),
+#                         components=[
+#                             vm.Graph(
+#                                 id="aut",
+#                                 figure=radarchart(
+#                                     gapminder_1,
+#                                     r="r_aut",
+#                                     theta="theta",
+#                                     title="AUT",
+#                                     markers=True,
+#                                     hover_name="theta",
+#                                     line_close=True,
+#                                     template="seaborn",
+#                                 ),
+#                             ),
+#                             vm.Card(
+#                                 text="""
+#                                 # ![](assets/images/aut.png#my-image9)
+                                
+#                                 ### Auckland University of Technology (AUT)
+#                                 Auckland University of Technology (AUT), located in Auckland, is known for its innovative teaching methods and strong industry connections.
+                                
+#                                 It offers a dynamic learning environment with a focus on practical skills and real-world experience.
+                                
+#                                 > ### SO WHAT DOES THIS MEAN? 
+                                
+#                                 > - **Research Quality (84)**: AUT's commitment to research excellence provides students with opportunities to engage in high-impact projects and innovations.
+                                
+#                                 > - **International Research Network (52.6)**: AUT's strong international connections mean you'll have access to a global perspective and valuable experience.
+                                
+#                                 Choosing AUT means embracing innovation and benefiting from strong industry ties. It's a place where you can receive a forward-thinking education and gain practical skills for your future career. 🌟💡📚
+#                                 """,
+#                             ),
+#                         ],
+#                     ),
+#                 ],
+#             )
+#         ]
+#     )
+#     return page_years
+
+### PAGE 2 Metrics 
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -82,15 +515,15 @@ gapminder = pd.read_csv('uni.csv', header=0, usecols=[
 ])
 
 gapminder_1 = pd.DataFrame(dict(
-    r=[82.2, 39.7, 92.9, 88.3, 87.4, 44.7],
-    r_otago=[45, 35.6, 59.1, 75.8, 79.5, 24.6],
-    r_massey=[30.1, 28.7, 49.2, 60.5, 85.1, 14],
-    r_victoria=[42.8, 28.6, 71.6, 69.4, 70.7, 21.4],
-    r_waikato=[19.1, 26.1, 46.4, 74.3, 55.1, 11.7],
-    r_canterbury=[34.7, 28.6, 82.3, 62.4, 63, 27.3],
-    r_lincoln=[8.2, 33.9, 40, 68.4, 20.2, 5],
-    r_aut=[19.3, 23.8, 12.4, 84, 52.6, 11.2],
-    theta=['Academic reputation', 'Teaching quality', 'Employment Outcomes', 'Research quality', 'International Research Network', 'Employer Reputation']
+    r=[82.2, 39.7, 92.9, 88.3, 87.4, 44.7, 82.2],
+    r_otago=[45, 35.6, 59.1, 75.8, 79.5, 24.6, 45],
+    r_massey=[30.1, 28.7, 49.2, 60.5, 85.1, 14, 30.1],
+    r_victoria=[42.8, 28.6, 71.6, 69.4, 70.7, 21.4, 42.8],
+    r_waikato=[19.1, 26.1, 46.4, 74.3, 55.1, 11.7, 19.1],
+    r_canterbury=[34.7, 28.6, 82.3, 62.4, 63, 27.3, 34.7],
+    r_lincoln=[8.2, 33.9, 40, 68.4, 20.2, 5, 8.2],
+    r_aut=[19.3, 23.8, 12.4, 84, 52.6, 11.2, 19.3],
+    theta=['Academic reputation', 'Teaching quality', 'Employment Outcomes', 'Research quality', 'International Research Network', 'Employer Reputation', 'Academic reputation']
 ))
 
 @capture("graph")
@@ -127,6 +560,78 @@ def radarchart(data_frame, r, theta, title=None, markers=None, hover_name=None, 
         title_font_family="Georgia, serif",
     )
     return fig_radar
+    
+@capture("graph")
+def totalradarchart(data_frame): 
+    fig_total = go.Figure()
+    
+    fig_total.add_trace(go.Scatterpolar(
+        r=gapminder_1['r'],
+        theta=gapminder_1['theta'],
+        fill='toself',
+        name='University of Auckland'
+    ))
+
+    fig_total.add_trace(go.Scatterpolar(
+        r=gapminder_1['r_otago'],
+        theta=gapminder_1['theta'],
+        fill='toself',
+        name='University of Otago'
+    ))
+
+    fig_total.add_trace(go.Scatterpolar(
+        r=gapminder_1['r_massey'],
+        theta=gapminder_1['theta'],
+        fill='toself',
+        name='Massey University'
+    ))
+
+    fig_total.add_trace(go.Scatterpolar(
+        r=gapminder_1['r_victoria'],
+        theta=gapminder_1['theta'],
+        fill='toself',
+        name='Victoria University of Wellington'
+    ))
+
+    fig_total.add_trace(go.Scatterpolar(
+        r=gapminder_1['r_waikato'],
+        theta=gapminder_1['theta'],
+        fill='toself',
+        name='Waikato University'
+    ))
+
+    fig_total.add_trace(go.Scatterpolar(
+        r=gapminder_1['r_canterbury'],
+        theta=gapminder_1['theta'],
+        fill='toself',
+        name='University of Canterbury'
+    ))
+
+    fig_total.add_trace(go.Scatterpolar(
+        r=gapminder_1['r_lincoln'],
+        theta=gapminder_1['theta'],
+        fill='toself',
+        name='Lincoln University'
+    ))
+
+    fig_total.add_trace(go.Scatterpolar(
+        r=gapminder_1['r_aut'],
+        theta=gapminder_1['theta'],
+        fill='toself',
+        name='AUT'
+    ))
+
+    fig_total.update_layout(
+        polar=dict(
+            radialaxis=dict(
+                visible=True,
+            )
+        ),
+        showlegend=True
+    )
+    
+    return fig_total
+
 
 def create_metrics():
     """Function returns a page to show scores of different metrics on each university."""
@@ -137,6 +642,30 @@ def create_metrics():
         components=[
             vm.Tabs(
                 tabs=[
+                    vm.Container(
+                        title="Auckland",
+                        layout=vm.Layout(grid=[[1,1],
+                                               [0,0],
+                                               [0,0],
+                                               [0,0],
+                                               [0,0],
+                                               [0,0],]),
+                        components=[
+                            vm.Graph(
+                                id="radar_chart",
+                                figure=totalradarchart(
+                                    gapminder_1,
+                                ),
+                            ),
+                            vm.Card(
+                                text="""
+                                Check out the metrics scores of ALL universities. 
+                                For details in individual universities, click the tabs above. 
+
+                                """,
+                            ),
+                        ],
+                    ),
                     vm.Container(
                         title="Auckland",
                         layout=vm.Layout(grid=[[1, 0, 0]]),
@@ -158,8 +687,6 @@ def create_metrics():
                                 text="""
                                 ![](assets/images/uoa2.png#my-image2)
 
-                    
-                                
                                 The University of Auckland is New Zealand’s leading university, located in the country’s largest city. 
                                 
                                 It offers a comprehensive range of programs and is known for its strong emphasis on research and innovation. 
@@ -177,9 +704,7 @@ def create_metrics():
                                 If you choose the University of Auckland, you'll be choosing a university that is highly regarded, has great job prospects, and does great study. 
                                 You'll accomplish well in school and at work there, and you'll still be close to the exciting city life of Auckland. 🌟📚🌍
 
-         
                                 """,
-                
                             ),
                         ],
                     ),
@@ -451,6 +976,7 @@ def create_metrics():
     )
     return page_years
 
+
 # Load the data
 gapminder = pd.read_csv('uni.csv')
 
@@ -527,7 +1053,7 @@ def create_rankings_years():
         layout=vm.Layout(grid=[[3, 1, 1]] *2 + [[0, 1, 1]] * 5 + [[2, 1, 1]]),
         components=[
             vm.AgGrid(
-                title="Click on a cell in University Name column:",
+                title="University Rankings dataset",
                 figure=dash_ag_grid(data_frame=gapminder_line, columnDefs=columnsDefs, dashGridOptions={"pagination": True}),
                 actions=[vm.Action(function=filter_interaction(targets=["line_university"]))],
             ),
@@ -544,17 +1070,17 @@ def create_rankings_years():
                     template="simple_white", 
                 ),
                 
-                 # Use the customized figure here
+    
             ),
             # Uncomment the following lines if needed
             vm.Button(text="Export data", actions=[vm.Action(function=export_data(targets=["line_university"]))]),
             vm.Card(
                                 text="""
-                                Our line chart vividly illustrates the international rankings of New Zealand universities over the years. Most universities, including the University of Auckland, the University of Waikato, and Massey University, show an upward trend in their global standings, reflecting their increasing reputation and quality.
+                                Most universities, including the University of Auckland, the University of Waikato, and Massey University, show an upward trend in their global standings, reflecting their increasing reputation and quality.
 
-                                A higher international ranking means that New Zealand universities are offering competitive, high-quality education compared to others worldwide. These rankings are based on rigorous criteria by QS, one of the most prestigious ranking systems globally, which evaluates universities on Academic Reputation, Teaching Quality, Employment Outcomes, Research Quality, International Research Network, and Employer Reputation.
+                                A higher international ranking means that New Zealand universities are offering competitive, high-quality education compared to others worldwide. These rankings are based on rigorous criteria by QS, one of the most prestigious ranking systems globally.
 
-                                Seeing universities climb in these rankings indicates that they are consistently improving and maintaining high standards, making them reliable choices for students. On the other hand, some universities have seen a decrease, providing a complete picture of the dynamic educational landscape.
+                
                                 """,
                             ),
             
